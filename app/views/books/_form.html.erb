@@ -23,12 +23,12 @@
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.text_field :price %>
+    <%= form.number_field :price, step: 0.01 %>
   </div>
 
   <div class="field">
     <%= form.label :published_date %>
-    <%= form.input type="date" :published_date %>
+    <%= form.date_field :published_date %>
   </div>
 
   <div class="actions">
